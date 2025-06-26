@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnFast - Accelerate Your Future</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #4c51bf, #667eea); /* Indigo to Blue */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="index.html" class="text-3xl font-extrabold text-indigo-700 rounded-md">LearnFast</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-200 rounded-md">Home</a></li>
+                    <li><a href="course_details.html" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-200 rounded-md">Courses</a></li>
+                    <li><a href="about_contact.html" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-200 rounded-md">About/Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex-grow flex items-center justify-center py-16 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between bg-white rounded-xl shadow-2xl overflow-hidden p-8 md:p-12">
+            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6 rounded-md">
+                    Accelerate Your <span class="text-indigo-600">Future</span>
+                </h1>
+                <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                    Unlock the power of data with LearnFast. Our expert-led courses equip you with in-demand skills for tomorrow's job market.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="course_details.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:-translate-y-1">
+                        Explore Courses
+                    </a>
+                    <a href="registration_form.html" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:-translate-y-1">
+                        Register Now
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://placehold.co/500x350/667eea/ffffff?text=LearnFast+Analytics" alt="Data Analytics Course Image" class="rounded-lg shadow-xl max-w-full h-auto">
+            </div>
+        </div>
+    </main>
+
+    <!-- Navigation Buttons -->
+    <div class="flex justify-center p-6 bg-gray-100">
+        <!-- "Previous" button is not applicable on the home page -->
+        <a href="course_details.html" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300">
+            Next: Course Details &rarr;
+        </a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center text-gray-400 rounded-md">
+            &copy; 2025 LearnFast. All rights reserved.
+            <div class="mt-2">
+                <a href="about_contact.html" class="text-gray-400 hover:text-white mx-2 rounded-md">About Us</a> |
+                <a href="about_contact.html" class="text-gray-400 hover:text-white mx-2 rounded-md">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
