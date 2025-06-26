@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnFast - Data Analytics Course Registration</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+        }
+        /* Custom styling for focus states if needed, otherwise Tailwind handles it */
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.4); /* Indigo-500 equivalent */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="index.html" class="text-3xl font-extrabold text-indigo-700 rounded-md">LearnFast</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-200 rounded-md">Home</a></li>
+                    <li><a href="course_details.html" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-200 rounded-md">Courses</a></li>
+                    <li><a href="about_contact.html" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-200 rounded-md">About/Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content - Registration Form -->
+    <main class="flex-grow py-12 px-4">
+        <div class="container mx-auto bg-white rounded-xl shadow-2xl p-8 md:p-12 max-w-2xl">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 text-center mb-8 rounded-md">
+                Register for Data Analytics Masterclass
+            </h2>
+            <p class="text-center text-lg text-gray-700 mb-10">
+                Please fill out the form below to secure your spot in our upcoming cohort.
+            </p>
+
+            <form action="thank_you_page.html" method="GET" class="space-y-6">
+                <!-- Full Name -->
+                <div>
+                    <label for="fullName" class="block text-gray-700 text-lg font-medium mb-2">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="John Doe"
+                           class="w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition duration-150"
+                           required>
+                </div>
+
+                <!-- Email Address -->
+                <div>
+                    <label for="email" class="block text-gray-700 text-lg font-medium mb-2">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com"
+                           class="w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition duration-150"
+                           required>
+                </div>
+
+                <!-- Phone Number -->
+                <div>
+                    <label for="phone" class="block text-gray-700 text-lg font-medium mb-2">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890"
+                           class="w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition duration-150">
+                </div>
+
+                <!-- Educational Background -->
+                <div>
+                    <label for="education" class="block text-gray-700 text-lg font-medium mb-2">Highest Educational Background</label>
+                    <select id="education" name="education"
+                            class="w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition duration-150"
+                            required>
+                        <option value="">Select your education level</option>
+                        <option value="high_school">High School</option>
+                        <option value="associate">Associate Degree</option>
+                        <option value="bachelor">Bachelor's Degree</option>
+                        <option value="master">Master's Degree</option>
+                        <option value="phd">PhD</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Why are you interested? -->
+                <div>
+                    <label for="interest" class="block text-gray-700 text-lg font-medium mb-2">Why are you interested in this course?</label>
+                    <textarea id="interest" name="interest" rows="4" placeholder="Tell us about your motivation and goals..."
+                              class="w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition duration-150"
+                              required></textarea>
+                </div>
+
+                <!-- Terms and Conditions Checkbox -->
+                <div class="flex items-start">
+                    <input type="checkbox" id="terms" name="terms" class="mt-1 h-5 w-5 text-indigo-600 rounded focus:ring-indigo-500" required>
+                    <label for="terms" class="ml-3 text-base text-gray-700">
+                        I agree to the <a href="#" class="text-indigo-600 hover:underline">Terms and Conditions</a> and Privacy Policy.
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-10 rounded-full shadow-lg transition duration-300 transform hover:-translate-y-1 text-xl">
+                        Submit Application
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Navigation Buttons -->
+    <div class="flex justify-between p-6 bg-gray-100">
+        <a href="course_details.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-6 rounded-full shadow-md transition duration-300">
+            &larr; Previous: Course Details
+        </a>
+        <a href="thank_you_page.html" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-6 rounded-full shadow-md transition duration-300">
+            Next: Thank You &rarr;
+        </a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center text-gray-400 rounded-md">
+            &copy; 2025 LearnFast. All rights reserved.
+            <div class="mt-2">
+                <a href="about_contact.html" class="text-gray-400 hover:text-white mx-2 rounded-md">About Us</a> |
+                <a href="about_contact.html" class="text-gray-400 hover:text-white mx-2 rounded-md">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
